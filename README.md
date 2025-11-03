@@ -32,12 +32,14 @@ This project analyzes and forecasts crime trends using real-world police crime d
 ✅ Crime forecast for next 6 months  
 ✅ Interactive crime dashboard  
 
-## 🛠️ Skills Demonstrated
+## Skills Demonstrated
 
 - Data cleaning and preprocessing
+- R data wrangling & feature engineering
 - Time-series forecasting (ARIMA, Prophet)
 - Geospatial visualization
 - Interactive dashboard development
+- Shiny dashboard development
 - Statistical modeling
 
 ## 📁 Project Structure
@@ -88,58 +90,6 @@ source("scripts/00_install_packages.R")
 - `flexdashboard` - Dashboard layout
 - `sf` - Spatial data handling
 - `viridis` - Color palettes
-
-## 🚀 Getting Started
-
-### 1. Install R Packages
-
-```r
-source("scripts/00_install_packages.R")
-```
-
-### 2. Download Crime Data
-
-**Option A: Chicago Crime Data**
-```r
-# Download from: https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-Present/ijzp-q8t2
-# Or use the RSocrata package:
-library(RSocrata)
-crimes <- read.socrata("https://data.cityofchicago.org/resource/ijzp-q8t2.csv")
-write.csv(crimes, "data/chicago_crimes.csv", row.names = FALSE)
-```
-
-**Option B: Madison Crime Data**
-```r
-# Download from: https://data-cityofmadison.opendata.arcgis.com/
-```
-
-**Option C: Sample Data**
-The project includes a script to generate sample data for testing purposes.
-
-### 3. Run Analysis Scripts
-
-Execute scripts in order:
-
-```r
-# 1. Data Import and Cleaning
-source("scripts/01_data_import.R")
-
-# 2. Time-Series Analysis
-source("scripts/02_time_series_analysis.R")
-
-# 3. Forecasting Models
-source("scripts/03_forecasting.R")
-
-# 4. Geospatial Visualization
-source("scripts/04_geospatial.R")
-```
-
-### 4. Launch Dashboard
-
-```r
-library(shiny)
-runApp("dashboard/app.R")
-```
 
 ## 📊 Analysis Workflow
 
@@ -212,23 +162,4 @@ After running the analysis, you'll discover:
 - **Performance**: Large datasets may require data sampling for faster processing
 - **Updates**: Crime data is typically updated monthly
 
-## 🤝 Contributing
 
-Feel free to enhance this project by:
-- Adding new crime datasets
-- Implementing additional forecasting models
-- Improving dashboard features
-- Adding more geospatial analysis
-
-## 📄 License
-
-This project is for educational and analytical purposes. Please respect data source licenses and terms of use.
-
-## 📧 Contact
-
-For questions or suggestions, please open an issue or submit a pull request.
-
----
-
-**Last Updated**: November 2025  
-**Status**: Active Development
