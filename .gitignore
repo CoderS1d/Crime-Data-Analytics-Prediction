@@ -1,0 +1,31 @@
+# R files
+.Rhistory
+.RData
+.Rproj.user
+*.Rproj
+
+# Data files (too large for git)
+data/raw/*.csv
+data/raw/*.xlsx
+data/raw/*.json
+data/processed/*.csv
+
+# Output files
+outputs/plots/*.png
+outputs/plots/*.pdf
+outputs/maps/*.html
+
+# API keys and credentials
+.env
+config/api_keys.R
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*~
+
+# Shiny app
+rsconnect/
