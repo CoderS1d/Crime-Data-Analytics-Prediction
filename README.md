@@ -1,7 +1,8 @@
 # Crime Data Analytics & Prediction Project
 
 **A comprehensive time-series and geospatial analysis of crime data using R**
-** Check it out at https://bog67.shinyapps.io/crime-analytics-dashboard/ **
+
+Check it out at https://bog67.shinyapps.io/crime-analytics-dashboard/ 
 
 ## 📊 Project Overview
 
